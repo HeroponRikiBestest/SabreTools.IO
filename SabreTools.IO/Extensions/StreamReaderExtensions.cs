@@ -995,7 +995,7 @@ namespace SabreTools.IO.Extensions
         /// <summary>
         /// Read bytes until a 1-byte null terminator is found
         /// </summary>
-        private static byte[] ReadUntilNull1Byte(Stream stream)
+        public static byte[] ReadUntilNull1Byte(Stream stream)
         {
             var bytes = new List<byte>();
             while (stream.Position < stream.Length)
